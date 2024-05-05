@@ -7,14 +7,18 @@ function App() {
 
   // let counter = 5
   const addValue = () => {
+    if(counter <20) {
     console.log("clicked",counter);
     counter = counter + 1;
     setCounter(counter)
+    }
   }
 
   const removeValue = () => {
+    if(counter >0) {
     counter = counter - 1;
     setCounter(counter)
+    }
   }
 
   return (
